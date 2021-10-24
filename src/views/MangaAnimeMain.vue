@@ -63,7 +63,7 @@ export default {
   color: #fff;
   height: 40px;
   line-height: 40px;
-  padding-left: 3%;
+  padding-left: 2%;
   border-bottom: 1px solid var(--el-collapse-border-color);
 }
 

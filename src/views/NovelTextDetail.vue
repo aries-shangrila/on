@@ -6,7 +6,7 @@
             <el-breadcrumb-item :to="{ path: '/noveltext' }">小說 | 文本</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
-        <div style="background-color:#e9eef3; padding:10px 10px 10px 30px; display:flex;">
+        <div style="background-color:#F7F5E6; padding:10px 10px 10px 30px; display:flex;">
           <div style="padding-right:14px; line-height:24px; flex:0.7;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />

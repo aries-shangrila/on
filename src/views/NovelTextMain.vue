@@ -23,6 +23,7 @@
             <el-table-column prop="top" label="攻" width="70px" />
             <el-table-column prop="bot" label="受" width="70px" />
             <el-table-column prop="wordcount" label="字數" width="80px" :formatter="thousandFormat" />
+            <el-table-column prop="oneword" label="不爆雷一句話推薦(節錄心得)" width="200px" />
         </el-table>
     </el-main>
   </el-container>
@@ -76,7 +77,7 @@ export default {
   color: #fff;
   height: 40px;
   line-height: 40px;
-  padding-left: 3%;
+  padding-left: 2%;
   border-bottom: 1px solid var(--el-collapse-border-color);
 }
 
