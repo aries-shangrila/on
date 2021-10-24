@@ -1,5 +1,5 @@
 <template>
-  <el-container direction="vertical">
+  <!-- <el-container direction="vertical"> -->
     <el-radio-group v-model="isCollapse" class="switchbutton">
       <i 
         @click="isCollapse=false" 
@@ -33,7 +33,7 @@
       </template>
     </template>
     </el-menu>
-  </el-container>
+  <!-- </el-container> -->
 </template>
 
 <script>
@@ -75,14 +75,7 @@ export default {
 </script>
 
 <style>
-.el-aside {
-  color: var(--el-text-color-primary);
-  line-height: var(--el-font-line-height-on);
-  width: auto;
-  height: 100%;
-  top: 8px;
-  overflow: auto;
-}
+
 .el-menu {
   border-color: transparent;
 }

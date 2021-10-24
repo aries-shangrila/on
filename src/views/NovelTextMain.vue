@@ -46,11 +46,10 @@ export default {
     }
   },
   methods: {
-    thousandFormat (row, column, count) {
-      for (var i = 0; i < Math.floor((count.length - (1 + i)) / 3); i++) {
-          count = count.substring(0, count.length - (4 * i + 3)) + ',' + count.substring(count.length - (4 * i + 3))
-        }
-        return count
+    thousandFormat (row, column, wordcount) {    
+      var parts = wordcount.toString().split('.');
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      return parts.join('.');  
     },
   },
 }

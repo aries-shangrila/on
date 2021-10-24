@@ -1,17 +1,17 @@
 <template>
-  <el-container>   
-    <el-aside>
-      <el-scrollbar>
+  <el-container>
+    <el-aside class="sidebar">
+      <!-- <el-scrollbar> -->
         <OnSideBar />
-      </el-scrollbar>
+      <!-- </el-scrollbar> -->
     </el-aside>
     <el-container class="right-container">
       <el-header>
-        <section> 阿梨的小本本 </section>
+        <section class="header-section"> 阿梨的小本本 </section>
       </el-header>
-      <el-main>
+      <!-- <el-main> -->
         <router-view/>
-      </el-main>
+      <!-- </el-main> -->
     </el-container>
   </el-container>
 </template>
@@ -34,28 +34,26 @@ export default defineComponent({
 <style>
 
 .right-container {
-  margin-left: 200px; /* 要是動態的 */
+
 }
 
 .el-header {
+  /* line-height: var(--el-font-line-height-on); */
+  border-bottom: 2px solid #eeB6B7;
+  height: 56px;
+}
+
+.header-section {
   color: var(--el-text-color-primary);
   text-align: start;
   font-weight: bold;
   font-size: 20px;
-  line-height: var(--el-font-line-height-on);
-  padding-left: 5%;
-  border-bottom: 2px solid #eeB6B7;
-  /* position:fixed;
-  /* top:0;
-  right:0;
-  width: 100%;
-  z-index: -1; */
+  line-height: 56px;
 }
 
-.el-aside {
-  position:absolute;
-  top: 0;
-  left: 0;
+.sidebar {
+  width: auto;
+  overflow: auto;
 }
 
 </style>

@@ -70,8 +70,8 @@ const routes = [
     path: '/podcast', 
     index: '5',
     type: 'item',
-    component: () => import('./components/Empty.vue'),
-    meta: { title: '暈船暈到爆', icon: 'el-icon-mic' }
+    component: () => import('./views/PodcastMain.vue'),
+    meta: { title: '神仙愛情海', icon: 'el-icon-mic' }
   }
 ]
 
