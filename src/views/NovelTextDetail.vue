@@ -108,6 +108,8 @@ export default {
 
 .el-main {
   display: flex;
+  margin-top: 56px;
+  margin-left: 180px;
 }
 
 .el-divider__text {

@@ -32,7 +32,6 @@ export default defineComponent({
 </script>
 
 <style>
-
 .right-container {
 
 }
@@ -41,6 +40,17 @@ export default defineComponent({
   /* line-height: var(--el-font-line-height-on); */
   border-bottom: 2px solid #eeB6B7;
   height: 56px;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+}
+
+.el-aside {
+  position: fixed;
+  height: 100%;
+  background: white;
+  z-index: 1;
 }
 
 .header-section {
