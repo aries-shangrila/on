@@ -1,16 +1,18 @@
 <template>
   <el-container>
-    <el-aside class="sidebar">
+    <el-aside>
       <!-- <el-scrollbar> -->
         <OnSideBar />
       <!-- </el-scrollbar> -->
     </el-aside>
-    <el-container class="right-container">
+    <el-container>
       <el-header>
         <section class="header-section"> 阿梨的小本本 </section>
       </el-header>
       <!-- <el-main> -->
-        <router-view/>
+        <el-container style="height:750px; width:960px; overflow:auto;">
+        <router-view />
+        </el-container>
       <!-- </el-main> -->
     </el-container>
   </el-container>
@@ -32,9 +34,6 @@ export default defineComponent({
 </script>
 
 <style>
-.right-container {
-
-}
 
 .el-header {
   /* line-height: var(--el-font-line-height-on); */
@@ -47,10 +46,12 @@ export default defineComponent({
 }
 
 .el-aside {
-  position: fixed;
+  /* position: fixed; */
   height: 100%;
-  background: white;
-  z-index: 1;
+  /* background: white;
+  z-index: 1; */
+  width: auto;
+  /* overflow-y: auto; */
 }
 
 .header-section {
@@ -61,9 +62,5 @@ export default defineComponent({
   line-height: 56px;
 }
 
-.sidebar {
-  width: auto;
-  overflow: auto;
-}
 
 </style>

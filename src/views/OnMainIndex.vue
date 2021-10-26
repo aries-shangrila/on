@@ -51,7 +51,7 @@ export default {
   padding-left: 3%;
   margin-right: 0px;
   margin-bottom: 0px;
-  flex-direction:column;
+  margin-top: 56px;
 }
 
 .el-collapse-item__header {
@@ -80,7 +80,7 @@ export default {
   font-weight: 500;
   height: 40px;
   line-height: 40px;
-  margin-top:2%;
+  margin-top: 18px;
   padding-left: 2%;
   border-bottom: 1px solid var(--el-collapse-border-color);
 }

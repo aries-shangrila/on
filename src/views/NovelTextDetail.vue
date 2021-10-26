@@ -6,7 +6,7 @@
             <el-breadcrumb-item :to="{ path: '/noveltext' }">小說 | 文本</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
-        <div style="background-color:#F7F5E6; padding:10px 10px 10px 30px; display:flex;">
+        <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px; display:flex;">
           <div style="padding-right:14px; line-height:24px; flex:0.7;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />
@@ -106,12 +106,6 @@ export default {
   line-height: 55px;
 }
 
-.el-main {
-  display: flex;
-  margin-top: 56px;
-  margin-left: 180px;
-}
-
 .el-divider__text {
   background-color: transparent;
 }
@@ -133,16 +127,16 @@ blockquote {
 }
 
 .toc-wrapper {
-  display: block;
-  padding-left: 2%;
+  display: flex;
+  /* padding-left: 2%; */
   flex: 0.3;
-
+  justify-content: flex-end;
 }
 
 .toc-content {
-  position: sticky;
-  top: 50px;
-  padding: 4px 8px 4px 12px;
+  position: fixed;
+  top: 130px;
+  padding: 4px 12px 4px 0px;
   margin-bottom: 20px;
 }
 
@@ -164,7 +158,7 @@ blockquote {
 
 .toc-item {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: inherit;
   list-style: none;
@@ -172,7 +166,7 @@ blockquote {
   padding-left: 14px;
 }
 
-.toc-marker {
+/* .toc-marker {
   position: absolute;
   background-color: aquamarine;
   border-radius: 4px;
@@ -181,7 +175,7 @@ blockquote {
   top: 30px;
   left: 0;
   z-index: 0;
-}
+} */
 
 .toc-link {
   text-decoration: inherit;

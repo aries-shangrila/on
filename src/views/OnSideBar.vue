@@ -79,6 +79,7 @@ export default {
 .el-menu {
   border-color: transparent;
 }
+
 .switchbutton {
   height: 56px;
   width: 63px;
