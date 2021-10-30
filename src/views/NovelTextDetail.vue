@@ -11,15 +11,19 @@
           <div style="padding-right:14px; line-height:24px; flex:0.7;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />
-              <p>{{stars}}</p>           
-              <p>加分點</p>
-              <ul>
-                <li v-for="good in plus" class="point">{{good}}</li>
-              </ul>
-              <p>減分點</p>
-              <ul>
-                <li v-for="nogood in minus" class="point">{{nogood}}</li>
-              </ul>
+              <p>{{stars}}</p>  
+              <template v-if="plus!=''">         
+                <p>加分點</p>
+                <ul>
+                  <li v-for="good in plus" class="point">{{good}}</li>
+                </ul>
+              </template>
+              <template v-if="minus!=''">
+                <p>減分點</p>
+                <ul>
+                  <li v-for="nogood in minus" class="point">{{nogood}}</li>
+                </ul>
+              </template>
             </div>
             <el-divider><i class="el-icon-star-on"></i></el-divider>
             <div v-for="topic in topics" >

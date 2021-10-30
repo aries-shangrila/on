@@ -26,7 +26,7 @@
             <!-- <el-table-column prop="stars" label="給分" width="120px" /> -->
             <el-table-column prop="top" label="攻" width="80px" />
             <el-table-column prop="bot" label="受" width="80px" />
-            <el-table-column prop="wordcount" label="字數" width="100px" :formatter="thousandFormat" />
+            <el-table-column prop="wordcount" label="作品字數" width="100px" :formatter="thousandFormat" />
             <el-table-column prop="oneword" label="不爆雷一句話推薦(節錄心得)" width="300px" />
         </el-table>
     </el-main>
