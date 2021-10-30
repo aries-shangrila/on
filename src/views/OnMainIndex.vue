@@ -4,8 +4,7 @@
       <div class="div-collapse"> [ 本站含有大量BL作品討論內容，提醒可能造成身心不適，請斟酌閱覽。 ] </div>
       <el-collapse v-model="activeNames" @change="handleChange">
         <el-collapse-item title="始於2021春.">
-          <div>全站內容皆獨自整理且網站自行開發建置。</div>
-          <div>引用心得文字資料請註明網站名稱或網址。</div>
+          <div>全站內容皆獨自整理且網站自行開發建置，引用心得文字資料請註明網站名稱或網址。</div>
           <div>Copyright © 2021 alphaliouo. All rights reserved.</div>
         </el-collapse-item>       
         <el-collapse-item title="BL作品交流" name="1">

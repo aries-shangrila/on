@@ -4,7 +4,7 @@
         <div class="mtitle">漫畫 | 動畫</div>
         <el-collapse v-model="activeNames" @change="handleChange">
           <el-collapse-item title="須知（沒事就看看）">
-            <div class="n-col-item">✔ 中譯名，中文官方有代理會使用官方譯名，其他自譯，非正式名。</div>
+            <div class="n-col-item">✔ 中文官方有代理會使用官方中譯名，沒有就自譯，非正式名。</div>
             <div class="n-col-item">✔ 漫畫連載時間較長，有些連載中的會先寫心得，之後隨連載再更新。</div>
             <div class="n-col-item">✔ tag是我想放什麼就放什麼，非官方標籤。</div>
           </el-collapse-item>
@@ -85,6 +85,10 @@ export default {
 .mlink {
   color:rgb(110, 115, 118);
   text-decoration-color: rgb(110, 115, 118);
+}
+
+.n-col-item {
+  color: #5B80AC;
 }
 
 </style>

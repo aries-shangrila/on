@@ -6,6 +6,7 @@
             <el-breadcrumb-item :to="{ path: '/noveltext' }">小說 | 文本</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
+        <!-- background-image:url(../src/assets/sli100.png);-->
         <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px; display:flex;">
           <div style="padding-right:14px; line-height:24px; flex:0.7;">
             <div style="padding-right:3%; padding-bottom:1%;">
@@ -34,13 +35,13 @@
             <nav class="toc-content">
               <ul class="toc-items">
                 <li class="toc-item">
-                  <a href="#0" class="toc-link">碎語</a>
+                  <a href="#0" class="toc-link">加減分</a>
                 </li>
                 <li v-for="topic in topics" class="toc-item">
                   <a v-bind:href="topic.link" class="toc-link">{{topic.point}}</a>
                 </li>
                 <li class="toc-item">
-                  <a href="#99" class="toc-link">閒言</a>
+                  <a href="#99" class="toc-link">結語</a>
                 </li>
               </ul>
               <div class="toc-marker" style="opacity: 1; top:55px;"></div>
@@ -115,7 +116,7 @@ export default {
 }
 
 blockquote {
-  border-left: 3px solid #b3c0d1;
+  border-left: 3px solid #eeB6B7;
   padding-left: 14px;
   margin-left: 14px;
 }
@@ -164,6 +165,8 @@ blockquote {
   list-style: none;
   border-left: 3px solid #b3c0d1;
   padding-left: 14px;
+  white-space: pre-wrap;
+  width:200px;
 }
 
 /* .toc-marker {
