@@ -28,7 +28,7 @@ const routes = [
       {
         path: '/noveltext/:id',
         index: '2-1-1',
-        name: 'title',
+        name: 'noveltextdetail',
         component: () => import('./views/NovelTextDetail.vue'),
       },
       { 
@@ -38,6 +38,12 @@ const routes = [
         type: 'item',
         component: () => import('./views/MangaAnimeMain.vue'),
         meta: { title: '漫畫 | 動畫'}  
+      },
+      {
+        path: '/mangaanime/:id',
+        index: '2-2-1',
+        name: 'mangaanimedetail',
+        component: () => import('./views/MangaAnimeDetail.vue'),
       },
       { 
         // 2-3 廣播影劇
