@@ -1,4 +1,7 @@
 <template>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content ? `${content} | 阿梨的小本本` : `阿梨的小本本` }}</template>
+  </metainfo>
   <el-container>
     <el-aside>
       <!-- <el-scrollbar> -->
@@ -23,9 +26,16 @@ import HelloWorld from './components/HelloWorld.vue'
 import OnSideBar from './views/OnSideBar.vue'
 import OnMainIndex from './views/OnMainIndex.vue'
 import { defineComponent, ref } from 'vue'
+import { useMeta } from 'vue-meta'
 
 export default defineComponent({
   name: 'App',
+  setup () {
+    useMeta({
+      title: '',
+      htmlAttrs: { lang: 'zh-Hant', amp: true }
+    })
+  },
   components: {
     OnSideBar,
     OnMainIndex,

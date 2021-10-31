@@ -9,6 +9,7 @@
     "@element-plus/icons": "^0.0.11",
     "element-plus": "^1.1.0-beta.19",
     "vue": "^3.0.4",
+    "vue-meta": "^3.0.0-alpha.2",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {

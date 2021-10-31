@@ -60,11 +60,15 @@
 
 <script>
 import { ref, toRef } from 'vue'
+import { useMeta } from 'vue-meta'
 
 export default {
   name: 'NovelTextDetail',
   created(){
     this.getJsonData(this.$route.params.id)
+  },
+  setup () {
+    useMeta({ title: '小說耽美心得'})
   },
   data() { 
     return {

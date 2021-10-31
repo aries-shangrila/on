@@ -26,7 +26,20 @@
             <el-table-column prop="author" label="作者" width="130px" />
             <!-- <el-table-column prop="stars" label="給分" width="120px" /> -->
             <el-table-column prop="process" label="進度" width="80px" />
-            <el-table-column prop="tag" label="Tag" width="350px" />
+            <el-table-column prop="tags" label="Tag" width="350px">
+              <template #default="scope">
+              <el-tag
+                v-for="item in scope.row.tags"
+                :key="item.label"
+                :type="item.type"
+                :effect="item.effect"
+                size="medium"
+                style="margin-right:3px;"
+              >
+                {{ item.label }}
+              </el-tag>
+              </template>
+            </el-table-column>>
         </el-table>
     </el-main>
   </el-container>
@@ -35,6 +48,7 @@
 <script>
 import { ref } from 'vue'
 import JSONResult from '../data/MangaAnimeList.json';
+import { useMeta } from 'vue-meta'
 
 export default {
   name: 'NovelTextMain',
@@ -50,6 +64,7 @@ export default {
     }
   },
   setup() {
+    useMeta({ title: '耽美心得'})
     const activeNames = ref(['1'])
     const handleChange = (val) => {
       console.log(val)
