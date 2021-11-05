@@ -13,7 +13,7 @@
         <section class="header-section"> 阿梨的小本本 </section>
       </el-header>
       <!-- <el-main> -->
-        <el-container style="height:750px; width:960px; overflow:auto;">
+        <el-container class="el-con">
         <router-view />
         </el-container>
       <!-- </el-main> -->
@@ -64,6 +64,12 @@ export default defineComponent({
   /* overflow-y: auto; */
 }
 
+.el-con {
+  height:750px; 
+  width:auto; 
+  overflow-y:auto;
+}
+
 .header-section {
   color: var(--el-text-color-primary);
   text-align: start;
@@ -72,5 +78,12 @@ export default defineComponent({
   line-height: 56px;
 }
 
+/* @media screen and (max-width:768px){
+
+}
+
+@media screen and (max-width:443px){
+
+} */
 
 </style>

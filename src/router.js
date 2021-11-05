@@ -50,7 +50,7 @@ const routes = [
         path: '/dramastream', 
         index: '2-3',
         type: 'item',
-        component: () => import('./components/Empty.vue'),
+        component: () => import('./views/DramaStreamMain.vue'),
         meta: { title: '廣播 | 影劇'}  
       }
     ]

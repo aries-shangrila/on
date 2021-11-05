@@ -6,9 +6,8 @@
             <el-breadcrumb-item :to="{ path: '/noveltext' }">小說 | 文本</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
-        <!-- background-image:url(../src/assets/sli100.png);-->
-        <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px; display:flex;">
-          <div style="padding-right:14px; line-height:24px; flex:0.7;">
+        <div class="div-main">
+          <div class="div-sec">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />
               <p>{{stars}}</p>  
@@ -53,9 +52,9 @@
           </aside>
         </div>
       </div>
+      <el-backtop style="color: #6E7376"></el-backtop>
     </el-main>
   </el-container>
-  <el-backtop style="color: #6E7376" />
 </template>
 
 <script>
@@ -117,6 +116,18 @@ export default {
 
 .el-divider__text {
   background-color: transparent;
+}
+
+.div-main {
+  background-color:#F7F5E6; 
+  padding:10px 30px 10px 30px; 
+  display:flex;
+}
+
+.div-sec {
+  padding-right:14px; 
+  line-height:24px; 
+  flex:0.7;
 }
 
 .point {
@@ -196,6 +207,49 @@ blockquote {
 .toc-link.active {
     color: var(--brand-color);
 }
+
+@media screen and (max-width:1100px){
+  .toc-item {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .toc-item {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width:930px){
+  .toc-item {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:890px){
+  .toc-item {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width:840px){
+  .toc-item {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .toc-wrapper{
+    display: none;
+  }
+  .div-sec{
+    flex: 1;
+  }
+}
+/* 
+@media screen and (max-width:443px){
+
+} */
 
 </style>
 

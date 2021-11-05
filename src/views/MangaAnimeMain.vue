@@ -13,7 +13,21 @@
         :data="tableData"
         style="width: 100%"
         >   
-            <el-table-column prop="push" label="" width="40px" />     
+            <el-table-column prop="push" label="" width="40px" />
+            <el-table-column prop="pic" label="" width="70px">
+              <template #default="scope">
+                  <el-image
+                    v-if="scope.row.id != ''"
+                    style="width: 50px; height: 50px"
+                    :src="'../src/assets/' + scope.row.id + '.png'"
+                    onerror="this.src='../src/assets/artboard50.png'"
+                  ></el-image>
+                  <el-image
+                    v-else
+                    :src="'../src/assets/artboard50.png'"
+                  ></el-image>
+              </template>
+            </el-table-column>  
             <el-table-column prop="title" label="作品名" width="150px">
               <template #default="scope">
                 <span v-if="scope.row.id === ''">{{ scope.row.title }}</span>
@@ -22,11 +36,11 @@
                 </router-link>
               </template>
             </el-table-column>
-            <el-table-column prop="zh-title" label="中譯" width="150px" />
-            <el-table-column prop="author" label="作者" width="130px" />
+            <el-table-column prop="zh-title" label="譯名" width="150px" />
+            <el-table-column prop="author" label="作者" width="140px" />
             <!-- <el-table-column prop="stars" label="給分" width="120px" /> -->
             <el-table-column prop="process" label="進度" width="80px" />
-            <el-table-column prop="tags" label="Tag" width="350px">
+            <el-table-column prop="tags" label="Tag" width="270px">
               <template #default="scope">
               <el-tag
                 v-for="item in scope.row.tags"
@@ -39,7 +53,7 @@
                 {{ item.label }}
               </el-tag>
               </template>
-            </el-table-column>>
+            </el-table-column>
         </el-table>
     </el-main>
   </el-container>

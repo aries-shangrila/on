@@ -98,4 +98,12 @@ export default {
   color: #6E7376;
 }
 
+@media screen and (min-width:768px){
+
+}
+
+@media screen and (min-width:443px){
+
+}
+
 </style>

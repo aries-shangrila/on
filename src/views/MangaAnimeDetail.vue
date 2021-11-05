@@ -6,7 +6,7 @@
             <el-breadcrumb-item :to="{ path: '/mangaanime' }">漫畫 | 動畫</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
-        <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px; width:70%">
+        <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px;">
           <div style="padding-right:14px; line-height:24px;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />

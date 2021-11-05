@@ -4,11 +4,11 @@
         <div class="ntitle">小說 | 文本</div>
         <el-collapse v-model="activeNames" @change="handleChange">
           <el-collapse-item title="須知（隨戳沒毛病）">
-            <div class="n-col-item-warning">✔ 點進心得鐵爆雷，不想被炸就停在這頁就好，一生只有一次，別犯賤。</div>
             <div class="n-col-item">✔ 看的多、寫的少，產心得速度極為緩慢。</div>
             <div class="n-col-item">✔ 棄文不會寫。</div>
           </el-collapse-item>
         </el-collapse>
+        <div class="n-item">✔ 點進心得鐵爆雷，不想被炸就停在這頁就好，一生只有一次，別犯賤。</div>
         <el-table
         :data="tableData"
         style="width: 100%"
@@ -92,10 +92,9 @@ export default {
   color: #5B80AC;
 }
 
-.n-col-item-warning {
-  color:#fff;
-  background-color:#99CED4;
+.n-item {
+  color:#F56C6C;
+  font-size: 14px;
 }
-
 
 </style>
