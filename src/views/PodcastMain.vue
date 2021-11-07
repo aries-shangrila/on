@@ -108,6 +108,11 @@ export default {
 </script>
 
 <style>
+
+.el-table {
+  --el-table-row-hover-background-color:var(--el-color-error-lighter);
+}
+
 .pod-p{
   color:#98878F;
   padding-top: 5px;

@@ -52,7 +52,7 @@
           </aside>
         </div>
       </div>
-      <el-backtop style="color: #6E7376"></el-backtop>
+      <el-backtop style="color: #6E7376" />
     </el-main>
   </el-container>
 </template>
@@ -104,6 +104,10 @@ export default {
 </script>
 
 <style>
+
+.el-breadcrumb__inner.is-link:hover{
+  color:#eeB6B7
+}
 
 .breadtitle {
   font-size: 1em;

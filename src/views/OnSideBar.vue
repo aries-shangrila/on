@@ -1,8 +1,8 @@
 <template>
   <!-- <el-container direction="vertical"> -->
     <el-radio-group v-model="isCollapse" class="switchbutton">
-      <i 
-        @click="isCollapse=false" 
+      <!-- <i 
+        @click="isCollapse=false"
         v-show="isCollapse" 
         class="el-icon-s-unfold" 
       >
@@ -12,17 +12,36 @@
         v-show="!isCollapse" 
         class="el-icon-s-fold"
       >
-      </i>
+      </i> -->
     </el-radio-group>
     <el-menu
     active-text-color="#303133"
     default-active="/"
     :default-openeds="['2']"
     text-color="#6E7376"
-    :collapse="isCollapse"
+    :collapse="false"
     @open="handleOpen"
     @close="handleClose"
     :router="true"
+    class="el-menu-normal"
+    >
+    <template v-for="menuItem in menuList">
+      <template v-if="menuItem.type === 'item'">
+        <on-menu-item :menu="menuItem"></on-menu-item>
+      </template>
+      <template v-if="menuItem.type === 'submenu'">
+        <on-sub-menu :menu="menuItem"></on-sub-menu>
+      </template>
+    </template>
+    </el-menu>
+    <el-menu
+    active-text-color="#303133"
+    default-active="/"
+    :default-openeds="['2']"
+    text-color="#6E7376"
+    :collapse="true"
+    :router="true"
+    class="el-menu-rwd"
     >
     <template v-for="menuItem in menuList">
       <template v-if="menuItem.type === 'item'">
@@ -58,7 +77,7 @@ export default {
     return {}
   },
   setup() {
-    const isCollapse = ref(false)
+    const isCollapse = ref(true)
     const handleOpen = (key, keyPath) => {
       console.log(key, keyPath)
     }
@@ -78,6 +97,12 @@ export default {
 
 .el-menu {
   border-color: transparent;
+  --el-menu-item-hover-fill:var(--el-color-error-lighter);
+  --el-menu-hover-background-color:var(--el-color-error-lighter);
+}
+
+.el-menu-rwd {
+  display: none;
 }
 
 .switchbutton {
@@ -90,19 +115,33 @@ export default {
   font-size: 18px;
   line-height: 56px;
   color: #6E7376;
+  display: none;
 }
 
 .el-icon-s-fold{
   font-size: 18px;
   line-height: 56px;
   color: #6E7376;
+  display: none;
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
+  .el-icon-s-unfold{
+    display: initial;
+  }
+  .el-icon-s-fold{
+    display: initial;
+  }
+  .el-menu-normal {
+    display: none;
+  }
 
+  .el-menu-rwd {
+    display: initial;
+  }
 }
 
-@media screen and (min-width:443px){
+@media screen and (max-width:443px){
 
 }
 

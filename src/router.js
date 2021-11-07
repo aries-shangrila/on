@@ -60,7 +60,7 @@ const routes = [
     path: '/treasurevault', 
     index: '3',
     type: 'item',
-    component: () => import('./components/Empty.vue'),
+    component: () => import('./views/TreasureVault.vue'),
     meta: { title: '梨a寶藏庫', icon: 'el-icon-sunrise' }
   },
   { 

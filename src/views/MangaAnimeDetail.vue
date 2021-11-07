@@ -71,6 +71,10 @@ export default {
 
 <style>
 
+.el-breadcrumb__inner.is-link:hover{
+  color:#eeB6B7
+}
+
 .breadtitle {
   font-size: 1em;
   background-color: #fff;

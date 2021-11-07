@@ -47,6 +47,7 @@ export default defineComponent({
 
 .el-header {
   /* line-height: var(--el-font-line-height-on); */
+  margin-left: 182px;
   border-bottom: 2px solid #eeB6B7;
   height: 56px;
   position: fixed;
@@ -56,16 +57,18 @@ export default defineComponent({
 }
 
 .el-aside {
-  /* position: fixed; */
+  position: fixed;
+  width:182px;
   height: 100%;
-  /* background: white;
-  z-index: 1; */
+  background: white;
+  z-index: 1;
   width: auto;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 .el-con {
-  height:750px; 
+  margin-left: 182px;
+  height:auto; 
   width:auto; 
   overflow-y:auto;
 }
@@ -78,12 +81,18 @@ export default defineComponent({
   line-height: 56px;
 }
 
-/* @media screen and (max-width:768px){
+@media screen and (max-width:768px){
+  .el-header {
+    margin-left: 64px;
+  }
+  .el-con {
+    margin-left: 64px;
+  }
 
 }
 
 @media screen and (max-width:443px){
 
-} */
+}
 
 </style>

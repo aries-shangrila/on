@@ -20,10 +20,9 @@
           <div>我看過的作品並非包山包海，如果超出我的認知範圍會請朋友幫忙推薦，回信內容也會說明的。</div>
           <div>也非常歡迎來信推薦給我你喜歡的作品🖤</div>
         </el-collapse-item>
-        <el-collapse-item title="梨a喜好">
-          <div>我自己心裡有幾本是看完之後愛不釋手，可能也很難寫出心得的作品。</div>
-          <div>私心想要讓他們見光(?)，所以在這裡留個版面給他們。</div>
-          <div>判官｜天官賜福｜將進酒｜小蘑菇</div>
+        <el-collapse-item title="聯絡阿梨">
+          <div>Email || 9339channel@gmail.com</div>
+          <div>Facebook || <el-link type="primary" href='https://www.facebook.com/crushonBL' target="_blank">BL暈船仔</el-link></div>
           <div></div>
         </el-collapse-item>
       </el-collapse>

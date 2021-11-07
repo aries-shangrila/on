@@ -18,7 +18,7 @@
               <template #default="scope">
                   <el-image
                     v-if="scope.row.id != ''"
-                    style="width: 50px; height: 50px"
+                    style="width: 60px; height: 60px"
                     :src="'../src/assets/' + scope.row.id + '.png'"
                     onerror="this.src='../src/assets/artboard50.png'"
                   ></el-image>
@@ -92,6 +92,9 @@ export default {
 </script>
 
 <style>
+.el-table {
+  --el-table-row-hover-background-color:var(--el-color-error-lighter);
+}
 
 .mtitle {
   font-size: 1em;

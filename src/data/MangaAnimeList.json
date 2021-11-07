@@ -35,7 +35,7 @@
           "effect":"plain"
         },
         {
-          "type":"danger",
+          "type":"warning",
           "label":"#白光碼🥩",
           "effect":"plain"
         },
@@ -61,7 +61,7 @@
           "effect":"plain"
         },
         {
-          "type":"danger",
+          "type":"warning",
           "label":"#薄碼🥩",
           "effect":"plain"
         },

@@ -73,6 +73,9 @@ export default {
 </script>
 
 <style>
+.el-table {
+  --el-table-row-hover-background-color:var(--el-color-error-lighter);
+}
 
 .ntitle {
   font-size: 1em;
