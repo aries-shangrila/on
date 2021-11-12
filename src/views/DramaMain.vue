@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-main>
-        <div class="ntitle">廣播 | 影劇</div>
+        <div class="ntitle">廣播劇</div>
         <el-table
         :data="tableData"
         style="width: 100%"
@@ -39,11 +39,11 @@
 
 <script>
 import { ref } from 'vue'
-import JSONResult from '../data/DramaStreamList.json';
+import JSONResult from '../data/DramaList.json';
 import { useMeta } from 'vue-meta'
 
 export default {
-  name: 'NovelTextMain',
+  name: 'DramaMain',
   methods: {
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')

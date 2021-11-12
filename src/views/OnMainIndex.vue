@@ -14,15 +14,16 @@
           <div>如果了解以上規則，也願意試試看的小夥伴，請參照以下內容發信至 9339channel@gmail.com 。</div>
           <div>*來信主旨請寫「阿梨的小本本詢問推薦書」</div>
           <div>*內文請寫下：</div>
-          <div>1.你看過喜歡的書(數量隨意、想標註為什麼喜歡也可以寫)</div>
-          <div>2.絕對不想碰到的領域</div>
-          <div>3.其他你覺得可以幫助我判斷推薦的各種資訊</div>
+          <div>1. 你看過喜歡的書(數量隨意、想標註為什麼喜歡也可以寫)</div>
+          <div>2. 絕對不想碰到的領域</div>
+          <div>3. 其他你覺得可以幫助我判斷推薦的各種資訊</div>
           <div>我看過的作品並非包山包海，如果超出我的認知範圍會請朋友幫忙推薦，回信內容也會說明的。</div>
           <div>也非常歡迎來信推薦給我你喜歡的作品🖤</div>
         </el-collapse-item>
-        <el-collapse-item title="聯絡阿梨">
+        <el-collapse-item title="聯絡阿梨" name="2">
           <div>Email || 9339channel@gmail.com</div>
           <div>Facebook || <el-link type="primary" href='https://www.facebook.com/crushonBL' target="_blank">BL暈船仔</el-link></div>
+          <div>Instagram || <el-link type="danger" href='https://www.instagram.com/crushonbl/' target="_blank">BL暈船仔</el-link></div>
           <div></div>
         </el-collapse-item>
       </el-collapse>
@@ -36,7 +37,7 @@ import { ref } from 'vue'
 export default {
   name: 'OnMainIndex',
   setup() {
-    const activeNames = ref(['1'])
+    const activeNames = ref(['1','2'])
     const handleChange = (val) => {
       console.log(val)
     }

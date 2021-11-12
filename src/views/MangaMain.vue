@@ -1,9 +1,9 @@
 <template>
   <el-container>
     <el-main>
-        <div class="mtitle">漫畫 | 動畫</div>
+        <div class="mtitle">漫畫 | 網漫</div>
         <el-collapse v-model="activeNames" @change="handleChange">
-          <el-collapse-item title="須知（沒事就看看）">
+          <el-collapse-item title="須知（沒事就看看）" name="1">
             <div class="n-col-item">✔ 中文官方有代理會使用官方中譯名，沒有就自譯，非正式名。</div>
             <div class="n-col-item">✔ 漫畫連載時間較長，有些連載中的會先寫心得，之後隨連載再更新。</div>
             <div class="n-col-item">✔ tag是我想放什麼就放什麼，非官方標籤。</div>
@@ -14,30 +14,31 @@
         style="width: 100%"
         >   
             <el-table-column prop="push" label="" width="40px" />
-            <el-table-column prop="pic" label="" width="70px">
+            <el-table-column prop="pic" label="" width="80px">
               <template #default="scope">
                   <el-image
                     v-if="scope.row.id != ''"
                     style="width: 60px; height: 60px"
                     :src="'../src/assets/' + scope.row.id + '.png'"
-                    onerror="this.src='../src/assets/artboard50.png'"
+                    onerror="this.src='../src/assets/artboard.png'"
                   ></el-image>
                   <el-image
                     v-else
-                    :src="'../src/assets/artboard50.png'"
+                    style="width: 60px; height: 60px"
+                    :src="'../src/assets/artboard.png'"
                   ></el-image>
               </template>
             </el-table-column>  
             <el-table-column prop="title" label="作品名" width="150px">
               <template #default="scope">
                 <span v-if="scope.row.id === ''">{{ scope.row.title }}</span>
-                <router-link class="mlink" v-else :to="{name: 'mangaanimedetail', params: { id: scope.row.id }}" tag="span">
+                <router-link class="mlink" v-else :to="{name: 'mangadetail', params: { id: scope.row.id }}" tag="span">
                   <span>{{ scope.row.title }}</span>
                 </router-link>
               </template>
             </el-table-column>
             <el-table-column prop="zh-title" label="譯名" width="150px" />
-            <el-table-column prop="author" label="作者" width="140px" />
+            <el-table-column prop="author" label="作者" width="130px" />
             <!-- <el-table-column prop="stars" label="給分" width="120px" /> -->
             <el-table-column prop="process" label="進度" width="80px" />
             <el-table-column prop="tags" label="Tag" width="270px">
@@ -48,7 +49,7 @@
                 :type="item.type"
                 :effect="item.effect"
                 size="medium"
-                style="margin-right:3px;"
+                style="margin:3px;"
               >
                 {{ item.label }}
               </el-tag>
@@ -61,11 +62,11 @@
 
 <script>
 import { ref } from 'vue'
-import JSONResult from '../data/MangaAnimeList.json';
+import JSONResult from '../data/MangaList.json';
 import { useMeta } from 'vue-meta'
 
 export default {
-  name: 'NovelTextMain',
+  name: 'MangaMain',
   methods: {
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')

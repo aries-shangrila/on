@@ -2,18 +2,57 @@
     "tables":[
       {
         "title": "判官",
+        "tags":[
+          {
+            "type":"warning",
+            "label":"小說",
+            "effect":"dark"
+          }
+        ],
         "comment": ""
       },
       {
         "title": "天官賜福",
+        "tags":[
+          {
+            "type":"warning",
+            "label":"小說",
+            "effect":"dark"
+          }
+        ],
         "comment": ""
       },
       {
         "title": "將進酒",
+        "tags":[
+          {
+            "type":"warning",
+            "label":"小說",
+            "effect":"dark"
+          }
+        ],
         "comment": ""
       },
       {
         "title": "小蘑菇",
+        "tags":[
+          {
+            "type":"warning",
+            "label":"小說",
+            "effect":"dark"
+          }
+        ],
+        "comment": ""
+      },
+      {
+        "title": "10 COUNT",
+        "tags":[
+          {
+            "type":"danger",
+            "label":"漫畫",
+            "effect":"dark"
+          }
+        ],
         "comment": ""
       }
     ]    

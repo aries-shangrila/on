@@ -3,7 +3,7 @@
     <el-main>
       <div>
         <el-breadcrumb separator-class="el-icon-caret-right" class="breadtitle">
-            <el-breadcrumb-item :to="{ path: '/noveltext' }">小說 | 文本</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/novel' }">原耽 | 小說</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
         <div class="div-main">
@@ -14,18 +14,18 @@
               <template v-if="plus!=''">         
                 <p>加分點</p>
                 <ul>
-                  <li v-for="good in plus" class="point">{{good}}</li>
+                  <li v-for="good in plus" :key="good" class="point">{{good}}</li>
                 </ul>
               </template>
               <template v-if="minus!=''">
                 <p>減分點</p>
                 <ul>
-                  <li v-for="nogood in minus" class="point">{{nogood}}</li>
+                  <li v-for="nogood in minus" :key="nogood" class="point">{{nogood}}</li>
                 </ul>
               </template>
             </div>
             <el-divider><i class="el-icon-star-on"></i></el-divider>
-            <div v-for="topic in topics" >
+            <div v-for="topic in topics" :key="topic.id" >
               <div v-bind:id="topic.id" style="padding-top:2%;" />
               <h3># {{topic.point}}</h3>
               <div v-html="topic.content" class="topic-content" />
@@ -40,7 +40,7 @@
                 <li class="toc-item">
                   <a href="#0" class="toc-link">加減分</a>
                 </li>
-                <li v-for="topic in topics" class="toc-item">
+                <li v-for="topic in topics" :key="topic.id" class="toc-item">
                   <a v-bind:href="topic.link" class="toc-link">{{topic.point}}</a>
                 </li>
                 <li class="toc-item">
@@ -62,7 +62,7 @@ import { ref, toRef } from 'vue'
 import { useMeta } from 'vue-meta'
 
 export default {
-  name: 'NovelTextDetail',
+  name: 'NovelDetail',
   created(){
     this.getJsonData(this.$route.params.id)
   },
@@ -85,14 +85,14 @@ export default {
       fetch(`../src/data/${id}.json`)
       .then((response) => {
         this.jsonData = response.json()
-        console.log(this.jsonData)
+        //console.log(this.jsonData)
         this.jsonData.then((res)=>{
-            this.title = res.title
-            this.stars = res.stars
-            this.plus = res.plus
-            this.minus = res.minus
-            this.section3 = res.section3
-            this.topics = res.topics
+          this.title = res.title
+          this.stars = res.stars
+          this.plus = res.plus
+          this.minus = res.minus
+          this.section3 = res.section3
+          this.topics = res.topics
         })
       })
     },
@@ -129,7 +129,7 @@ export default {
 }
 
 .div-sec {
-  padding-right:14px; 
+  padding:0 2%;
   line-height:24px; 
   flex:0.7;
 }
@@ -224,9 +224,21 @@ blockquote {
   }
 }
 
+@media screen and (max-width:975px){
+  .toc-item {
+    width: 160px;
+  }
+}
+
 @media screen and (max-width:930px){
   .toc-item {
     width: 150px;
+  }
+}
+
+@media screen and (max-width:910px){
+  .toc-item {
+    width: 145px;
   }
 }
 
@@ -236,9 +248,27 @@ blockquote {
   }
 }
 
-@media screen and (max-width:840px){
+@media screen and (max-width:860px){
+  .toc-item {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width:848px){
   .toc-item {
     width: 120px;
+  }
+}
+
+@media screen and (max-width:820px){
+  .toc-item {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width:780px){
+  .toc-item {
+    width: 100px;
   }
 }
 

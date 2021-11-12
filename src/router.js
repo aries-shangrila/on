@@ -19,65 +19,65 @@ const routes = [
     children: [
       { 
         // 2-1 小說文本
-        path: '/noveltext', 
+        path: '/novel', 
         index: '2-1',
         type: 'item',
-        component: () => import('./views/NovelTextMain.vue'),
-        meta: { title: '小說 | 文本'}, 
+        component: () => import('./views/NovelMain.vue'),
+        meta: { title: '原耽 | 小說'}, 
       },
       {
-        path: '/noveltext/:id',
+        path: '/novel/:id',
         index: '2-1-1',
-        name: 'noveltextdetail',
-        component: () => import('./views/NovelTextDetail.vue'),
+        name: 'noveldetail',
+        component: () => import('./views/NovelDetail.vue'),
       },
       { 
         // 2-2 漫畫動畫
-        path: '/mangaanime', 
+        path: '/manga', 
         index: '2-2',
         type: 'item',
-        component: () => import('./views/MangaAnimeMain.vue'),
-        meta: { title: '漫畫 | 動畫'}  
+        component: () => import('./views/MangaMain.vue'),
+        meta: { title: '漫畫 | 網漫'}  
       },
       {
-        path: '/mangaanime/:id',
+        path: '/manga/:id',
         index: '2-2-1',
-        name: 'mangaanimedetail',
-        component: () => import('./views/MangaAnimeDetail.vue'),
+        name: 'mangadetail',
+        component: () => import('./views/MangaDetail.vue'),
       },
       { 
         // 2-3 廣播影劇
-        path: '/dramastream', 
+        path: '/drama', 
         index: '2-3',
         type: 'item',
-        component: () => import('./views/DramaStreamMain.vue'),
-        meta: { title: '廣播 | 影劇'}  
+        component: () => import('./views/DramaMain.vue'),
+        meta: { title: '廣播劇'}  
       }
     ]
   },
   { 
-    // 3 寶藏庫
-    path: '/treasurevault', 
+    // 3 Podcast
+    path: '/podcast', 
     index: '3',
+    type: 'item',
+    component: () => import('./views/PodcastMain.vue'),
+    meta: { title: '神仙愛情海', icon: 'el-icon-mic' }
+  },
+  { 
+    // 4 寶藏庫
+    path: '/treasurevault', 
+    index: '4',
     type: 'item',
     component: () => import('./views/TreasureVault.vue'),
     meta: { title: '梨a寶藏庫', icon: 'el-icon-sunrise' }
   },
   { 
-    // 4 風花雪月
-    path: '/starrysky', 
-    index: '4',
+    // 9 風花雪月
+    path: '/history', 
+    index: '9',
     type: 'item',
-    component: () => import('./components/Empty.vue'),
+    component: () => import('./views/HistoryMain.vue'),
     meta: { title: '那些年的風花雪月', icon: 'el-icon-moon-night' }
-  },
-  { 
-    // 5 Podcast
-    path: '/podcast', 
-    index: '5',
-    type: 'item',
-    component: () => import('./views/PodcastMain.vue'),
-    meta: { title: '神仙愛情海', icon: 'el-icon-mic' }
   }
 ]
 

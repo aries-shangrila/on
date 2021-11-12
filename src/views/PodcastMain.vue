@@ -3,9 +3,9 @@
     <el-main>
       <div class="div-collapse"> [ BL暈船仔 ] </div>
       <div>
-        <div class="pod-p">這是一檔聊聊BL作品的podcast節目。</div>
+        <div class="pod-p">這是一檔聊BL的podcast節目。</div>
         <div class="pod-p">阿梨｜總攻｜小芋</div>
-        <div class="pod-p">歡迎與我們一起在BL汪洋大海中載浮載沉。</div>
+        <div class="pod-p">在BL汪洋大海中載浮載沉，在神仙愛情中暈船(⁎⁍̴̛ᴗ⁍̴̛⁎)</div>
       </div>
       <el-table
        :data="tableData"

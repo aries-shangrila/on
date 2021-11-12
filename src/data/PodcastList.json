@@ -1,16 +1,16 @@
 {
-    "tables":[
-      {
-        "ep": "EP1 《日落大道》 欸你怎麼...一個人在這邊壞壞？",
-        "apple": "https://podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592",
-        "spotify": "https://open.spotify.com/episode/5qrg97bxEDabBfBaVahChX?si=cjkO7rkYQkaXIuVn4xOQhQ",
-        "kkbox": "https://podcast.kkbox.com/channel/SktgOlI8hD5eXwUZZ8",
-        "soundon": "https://player.soundon.fm/p/1f39285d-7fa5-49d3-bc39-dd1c69a9cfec/episodes/bf4f4264-55b9-4a0c-a3bf-b3eff968b155",
-        "links":[
-          "https://embed.podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592",
-          "https://open.spotify.com/embed/episode/5qrg97bxEDabBfBaVahChX?utm_source=generator",
-          "https://podcast.kkbox.com/embed/tw/episode/0p5BERsU8uXP5xWqDE?theme=light"
-        ]
-      }
-    ]    
-  }
+  "tables":[
+    {
+      "ep": "EP1 《日落大道》 欸你怎麼...一個人在這邊壞壞？",
+      "apple": "https://podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592",
+      "spotify": "https://open.spotify.com/episode/5qrg97bxEDabBfBaVahChX?si=cjkO7rkYQkaXIuVn4xOQhQ",
+      "kkbox": "https://podcast.kkbox.com/channel/SktgOlI8hD5eXwUZZ8",
+      "soundon": "https://player.soundon.fm/p/1f39285d-7fa5-49d3-bc39-dd1c69a9cfec/episodes/bf4f4264-55b9-4a0c-a3bf-b3eff968b155",
+      "links":[
+        "https://embed.podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592",
+        "https://open.spotify.com/embed/episode/5qrg97bxEDabBfBaVahChX?utm_source=generator",
+        "https://podcast.kkbox.com/embed/tw/episode/0p5BERsU8uXP5xWqDE?theme=light"
+      ]
+    }
+  ]    
+}

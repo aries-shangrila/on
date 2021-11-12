@@ -1,10 +1,10 @@
 <template>
   <el-container>
     <el-main>
-        <div class="ntitle">小說 | 文本</div>
+        <div class="ntitle">原耽 | 小說</div>
         <el-collapse v-model="activeNames" @change="handleChange">
-          <el-collapse-item title="須知（隨戳沒毛病）">
-            <div class="n-col-item">✔ 看的多、寫的少，產心得速度極為緩慢。</div>
+          <el-collapse-item title="須知（隨戳沒毛病）" name="1">
+            <div class="n-col-item">✔ 非文字工作者，CD時間需要很久，產心得速度極為緩慢。</div>
             <div class="n-col-item">✔ 棄文不會寫。</div>
           </el-collapse-item>
         </el-collapse>
@@ -17,7 +17,7 @@
             <el-table-column prop="title" label="作品名" width="180px">
               <template #default="scope">
                 <span v-if="scope.row.id === ''">{{ scope.row.title }}</span>
-                <router-link class="nlink" v-else :to="{name: 'noveltextdetail', params: { id: scope.row.id }}" tag="span">
+                <router-link class="nlink" v-else :to="{name: 'noveldetail', params: { id: scope.row.id }}" tag="span">
                   <span>{{ scope.row.title }}</span>
                 </router-link>
               </template>
@@ -35,11 +35,11 @@
 
 <script>
 import { ref } from 'vue'
-import JSONResult from '../data/NovelTextList.json';
+import JSONResult from '../data/NovelList.json';
 import { useMeta } from 'vue-meta'
 
 export default {
-  name: 'NovelTextMain',
+  name: 'NovelMain',
   methods: {
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
@@ -98,6 +98,7 @@ export default {
 .n-item {
   color:#F56C6C;
   font-size: 14px;
+  margin-bottom: 2px;
 }
 
 </style>

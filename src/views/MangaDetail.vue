@@ -3,11 +3,11 @@
     <el-main>
       <div>
         <el-breadcrumb separator-class="el-icon-caret-right" class="breadtitle">
-            <el-breadcrumb-item :to="{ path: '/mangaanime' }">漫畫 | 動畫</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/manga' }">漫畫 | 網漫</el-breadcrumb-item>
             <el-breadcrumb-item>{{title}}</el-breadcrumb-item>
         </el-breadcrumb>
         <div style="background-color:#F7F5E6; padding:10px 30px 10px 30px;">
-          <div style="padding-right:14px; line-height:24px;">
+          <div style="padding:0 2%; line-height:24px;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />
               <p>{{stars}}</p>           
@@ -28,12 +28,12 @@ import { ref, toRef } from 'vue'
 import { useMeta } from 'vue-meta'
 
 export default {
-  name: 'MangaAnimeDetail',
+  name: 'MangaDetail',
   created(){
     this.getJsonData(this.$route.params.id)
   },
   setup () {
-    useMeta({ title: '動漫耽美心得'})
+    useMeta({ title: '漫畫耽美心得'})
   },
   data() { 
     return {
@@ -51,14 +51,14 @@ export default {
       fetch(`../src/data/${id}.json`)
       .then((response) => {
         this.jsonData = response.json()
-        console.log(this.jsonData)
+        //console.log(this.jsonData)
         this.jsonData.then((res)=>{
-            this.title = res.title
-            this.stars = res.stars
-            this.plus = res.plus
-            this.minus = res.minus
-            this.section3 = res.section3
-            this.topics = res.topics
+          this.title = res.title
+          this.stars = res.stars
+          this.plus = res.plus
+          this.minus = res.minus
+          this.section3 = res.section3
+          this.topics = res.topics
         })
       })
     },
