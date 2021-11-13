@@ -2,7 +2,7 @@
   <metainfo>
     <template v-slot:title="{ content }">{{ content ? `${content} | 阿梨的小本本` : `阿梨的小本本` }}</template>
   </metainfo>
-  <el-container>
+  <el-container style="background-image:url('../src/assets/background.png')">
     <el-aside>
       <!-- <el-scrollbar> -->
         <OnSideBar />
@@ -51,7 +51,7 @@ export default defineComponent({
   border-bottom: 2px solid #eeB6B7;
   height: 56px;
   position: fixed;
-  background-color: white;
+  background-color: transparent;
   z-index: 1;
   width: 100%;
 }
@@ -60,7 +60,7 @@ export default defineComponent({
   position: fixed;
   width:182px;
   height: 100%;
-  background: white;
+  background: transparent;
   z-index: 1;
   width: auto;
   overflow-y: auto;

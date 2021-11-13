@@ -97,6 +97,7 @@ export default {
 
 .el-menu {
   border-color: transparent;
+  background-color: transparent;
   --el-menu-item-hover-fill:var(--el-color-error-lighter);
   --el-menu-hover-background-color:var(--el-color-error-lighter);
 }

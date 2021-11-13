@@ -48,7 +48,7 @@ export default {
 <style>
 
 .div-item-a {
-  background-color: #fff;
+  background-color: transparent;
   color: #98878F;
   font-size: 15px;
   line-height: 40px;
