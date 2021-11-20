@@ -69,11 +69,6 @@ import { useMeta } from 'vue-meta'
 
 export default {
   name: 'NovelMain',
-  methods: {
-    goBack() {
-      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
-    },
-  },
   data() {
     return {
       tableData: JSONResult.tables,
@@ -92,7 +87,10 @@ export default {
     showOutline (row){  
       this.dialogVisible = true;
       this.outline = row.outline;
-    }
+    },
+    goBack() {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    },
   },
   setup() {
     useMeta({ title: '耽美心得'})
