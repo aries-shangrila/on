@@ -26,13 +26,40 @@
             </div>
             <el-divider><i class="el-icon-star-on"></i></el-divider>
             <div v-for="topic in topics" :key="topic.id" >
-              <div v-bind:id="topic.id" style="padding-top:2%;" />
+              <div v-bind:id="topic.id" style="padding-top:5%;" />
               <h3># {{topic.point}}</h3>
               <div v-html="topic.content" class="topic-content" />
             </div>
+            <div id=99 style="padding-top:5%;" />
             <el-divider><i class="el-icon-star-on"></i></el-divider>
-            <div id=99 style="padding-top:1%;" />
-            <div v-html="section3" style="padding-bottom:8%;"></div>
+            <div style="padding-top:5%;" />
+            <!-- <div v-html="section3" style="padding-bottom:8%;"></div> -->
+            <template v-if="podcast!=''">
+              <div v-html="section3" style="padding-bottom:5%;"></div>
+              <el-divider id=100><i class="el-icon-star-on"></i></el-divider>
+              <el-select v-model="selectPodcast" style="width:100%;max-width:300px;" placeholder="收聽此作品Podcast">
+                <el-option
+                  v-for="item in podcast"
+                  :key="item.key"
+                  :label="item.label"
+                  :value="item.value"
+                  @click.native="showPodcast(item.link)"
+                >
+                </el-option>
+              </el-select>
+              <div>
+              <iframe
+                showPodcast
+                allow="autoplay *; encrypted-media *; fullscreen *" 
+                frameborder="0" 
+                height="175"
+                style="width:100%;max-width:300px;overflow:hidden;background:transparent;" 
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"         
+                :src="srclink"
+              />
+              </div>
+            </template>
+            <div v-else v-html="section3" style="padding-bottom:8%;"></div>
           </div>
           <aside class="toc-wrapper">
             <nav class="toc-content">
@@ -45,6 +72,9 @@
                 </li>
                 <li class="toc-item">
                   <a href="#99" class="toc-link">結語</a>
+                </li>
+                <li class="toc-item" v-if="podcast!=''">
+                  <a href="#100" class="toc-link">Podcast</a>
                 </li>
               </ul>
               <div class="toc-marker" style="opacity: 1; top:55px;"></div>
@@ -68,6 +98,9 @@ export default {
   },
   setup () {
     useMeta({ title: '小說耽美心得'})
+    return{
+      selectPodcast: ref('')
+    }
   },
   data() { 
     return {
@@ -78,6 +111,8 @@ export default {
       minus: [],
       section3: "",
       topics: [],
+      podcast: [],
+      srclink:""
     }
   },
   methods: {
@@ -93,8 +128,12 @@ export default {
           this.minus = res.minus
           this.section3 = res.section3
           this.topics = res.topics
+          this.podcast = res.podcast
         })
       })
+    },
+    showPodcast(link){
+      this.srclink = link;
     },
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
@@ -106,7 +145,31 @@ export default {
 <style>
 
 .el-breadcrumb__inner.is-link:hover{
-  color:#eeB6B7
+  color:#eeB6B7;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+    border-color: #eeB6B7;
+}
+
+.el-select:hover .el-input__inner {
+    border-color: #eeB6B7;
+}
+
+.el-select .el-input__inner {
+    border-color: #eeB6B7;
+}
+
+.el-select .el-input__inner:focus {
+    border-color: #eeB6B7;
+}
+
+.el-select-dropdown__item.selected{
+  color:#fff;
+}
+
+.el-select-dropdown__item.selected.hover{
+  background-color:#eeB6B7;
 }
 
 .breadtitle {
@@ -147,7 +210,6 @@ blockquote {
 .topic-content {
   padding-left: 3%;
   padding-right: 3%;
-  padding-bottom: 3%;
 }
 
 .toc-wrapper {

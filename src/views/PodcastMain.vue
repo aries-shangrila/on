@@ -10,26 +10,26 @@
       <el-table
        :data="tableData"
       >
-        <el-table-column prop="ep" label="集數" width="300px" />
-        <el-table-column prop="apple" label="Apple Podcast" width="160px">
+        <el-table-column prop="ep" label="集數" width="250px" />
+        <el-table-column prop="apple" label="Apple Podcast" width="150px">
           <template #default="scope">
             <span v-if="scope.row.apple === ''">Apple Podcast</span>
-            <el-link v-else type="info" :href= scope.row.apple target="_blank">Apple Podcast</el-link>
+            <el-link v-else class="el-link-apple" :href= scope.row.apple target="_blank">Apple Podcast</el-link>
           </template>          
         </el-table-column>
-        <el-table-column prop="spotify" label="Spotify" width="130px">
+        <el-table-column prop="spotify" label="Spotify" width="100px">
           <template #default="scope">
             <span v-if="scope.row.spotify === ''">Spotify</span>
             <el-link v-else type="success" :href= scope.row.spotify target="_blank">Spotify</el-link>
           </template>
         </el-table-column>  
-        <el-table-column prop="kkbox" label="KKBOX" width="130px">
+        <el-table-column prop="kkbox" label="KKBOX" width="100px">
           <template #default="scope">
             <span v-if="scope.row.kkbox === ''">KKBOX</span>
             <el-link v-else type="primary" :href= scope.row.kkbox target="_blank">KKBOX</el-link>
           </template>          
         </el-table-column>
-        <el-table-column prop="soundon" label="SoundOn" width="130px">
+        <el-table-column prop="soundon" label="SoundOn" width="100px">
           <template #default="scope">
             <span v-if="scope.row.soundon === ''">SoundOn</span>
             <el-link v-else type="primary" :href= scope.row.soundon target="_blank">SoundOn</el-link>
@@ -110,7 +110,12 @@ export default {
 <style>
 
 .el-table {
-  --el-table-row-hover-background-color:var(--el-color-error-lighter);
+  --el-table-row-hover-background-color:transparent;
+}
+
+.el-link-apple {
+  --el-link-default-font-color:#B753E1;
+  --el-link-default-active-color:#bf7ddc;
 }
 
 .pod-p{

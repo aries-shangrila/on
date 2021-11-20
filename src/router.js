@@ -44,7 +44,8 @@ const routes = [
         index: '2-2-1',
         name: 'mangadetail',
         component: () => import('./views/MangaDetail.vue'),
-      },
+      }
+/*      ,
       { 
         // 2-3 廣播影劇
         path: '/drama', 
@@ -53,6 +54,7 @@ const routes = [
         component: () => import('./views/DramaMain.vue'),
         meta: { title: '廣播劇'}  
       }
+*/
     ]
   },
   { 
@@ -61,7 +63,7 @@ const routes = [
     index: '3',
     type: 'item',
     component: () => import('./views/PodcastMain.vue'),
-    meta: { title: '神仙愛情海', icon: 'el-icon-mic' }
+    meta: { title: 'Podcast', icon: 'el-icon-mic' }
   },
   { 
     // 4 寶藏庫

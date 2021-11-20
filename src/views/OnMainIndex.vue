@@ -6,8 +6,11 @@
         <el-collapse-item title="始於2021春.">
           <!-- <div>全站內容皆獨自整理且網站自行開發建置，引用心得文字資料請註明網站名稱或網址。</div> -->
           <div>Copyright © 2021 alphaliouo. All rights reserved.</div>
-        </el-collapse-item>       
-        <el-collapse-item title="BL作品交流" name="1">
+        </el-collapse-item>
+        <el-collapse-item title="更新推薦 (ver.202111-1)" name="1">
+          <el-link type="warning" href='/novel/202102' target="_blank">全世界都在等我們分手</el-link>
+        </el-collapse-item>     
+        <el-collapse-item title="BL作品交流" name="2">
           <div>一直以來都希望可以找到適合自己看的作品，也希望可以和別人交流心得，看未來能不能用一些技術的方式推薦到心坎裡。</div>
           <div>觀看到這裡的小夥伴，有興趣的話可以寄信給我請我推薦書籍。</div>
           <div>但也希望如果有收到推薦的作品看完之後也一定要給我回饋，才知道哪裡可以改進。</div>
@@ -20,7 +23,7 @@
           <div>我看過的作品並非包山包海，如果超出我的認知範圍會請朋友幫忙推薦，回信內容也會說明的。</div>
           <div>也非常歡迎來信推薦給我你喜歡的作品🖤</div>
         </el-collapse-item>
-        <el-collapse-item title="聯絡阿梨" name="2">
+        <el-collapse-item title="聯絡阿梨" name="3">
           <div>Email || 9339channel@gmail.com</div>
           <div>Facebook || <el-link type="primary" href='https://www.facebook.com/crushonBL' target="_blank">BL暈船仔</el-link></div>
           <div>Instagram || <el-link type="danger" href='https://www.instagram.com/crushonbl/' target="_blank">BL暈船仔</el-link></div>
@@ -37,7 +40,7 @@ import { ref } from 'vue'
 export default {
   name: 'OnMainIndex',
   setup() {
-    const activeNames = ref(['1','2'])
+    const activeNames = ref(['1','2','3'])
     const handleChange = (val) => {
       console.log(val)
     }

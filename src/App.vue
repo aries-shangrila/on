@@ -51,7 +51,7 @@ export default defineComponent({
   border-bottom: 2px solid #eeB6B7;
   height: 56px;
   position: fixed;
-  background-color: transparent;
+  background-image:url('../src/assets/backgroundwhite.png');
   z-index: 1;
   width: 100%;
 }

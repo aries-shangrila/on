@@ -3,7 +3,7 @@
     <el-main>
         <div class="mtitle">漫畫 | 網漫</div>
         <el-collapse v-model="activeNames" @change="handleChange">
-          <el-collapse-item title="須知（沒事就看看）" name="1">
+          <el-collapse-item title="須知（戳戳收合）" name="1">
             <div class="n-col-item">✔ 中文官方有代理會使用官方中譯名，沒有就自譯，非正式名。</div>
             <div class="n-col-item">✔ 漫畫連載時間較長，有些連載中的會先寫心得，之後隨連載再更新。</div>
             <div class="n-col-item">✔ tag是我想放什麼就放什麼，非官方標籤。</div>
@@ -12,6 +12,7 @@
         <el-table
         :data="tableData"
         style="width: 100%"
+        @row-click="openDetailPage"
         >   
             <el-table-column prop="push" label="" width="40px" />
             <el-table-column prop="pic" label="" width="80px">
@@ -32,16 +33,16 @@
             <el-table-column prop="title" label="作品名" width="150px">
               <template #default="scope">
                 <span v-if="scope.row.id === ''">{{ scope.row.title }}</span>
-                <router-link class="mlink" v-else :to="{name: 'mangadetail', params: { id: scope.row.id }}" tag="span">
+                <el-link class="mlink" v-else :to="{name: 'mangadetail', params: { id: scope.row.id }}" tag="span">
                   <span>{{ scope.row.title }}</span>
-                </router-link>
+                </el-link>
               </template>
             </el-table-column>
             <el-table-column prop="zh-title" label="譯名" width="150px" />
             <el-table-column prop="author" label="作者" width="130px" />
             <!-- <el-table-column prop="stars" label="給分" width="120px" /> -->
             <el-table-column prop="process" label="進度" width="80px" />
-            <el-table-column prop="tags" label="Tag" width="270px">
+            <el-table-column prop="tags" label="Tag" width="200px">
               <template #default="scope">
               <el-tag
                 v-for="item in scope.row.tags"
@@ -70,6 +71,9 @@ export default {
   methods: {
     goBack() {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    },
+    openDetailPage (row){
+      this.$router.push("/manga/"+row.id);
     }
   },
   data() {
@@ -118,6 +122,8 @@ export default {
 .mlink {
   color:rgb(110, 115, 118);
   text-decoration-color: rgb(110, 115, 118);
+  --el-link-default-font-color:#6E7376;
+  --el-link-default-active-color:#5B80AC;
 }
 
 .n-col-item {

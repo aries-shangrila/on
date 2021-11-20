@@ -3,7 +3,7 @@
     <el-main>
       <div class="div-collapse"> [ 更新歷程 ] </div>
       <template v-for="item in items" :key="item.index">
-        <div class="div-item-a" v-if="item.index%2==0" > {{item.index}} </div>
+        <div class="div-item-a" v-if="item.index%2==0" > {{item.description}} </div>
         <div class="div-item-b" v-else > {{item.description}} </div>
       </template>
     </el-main>
