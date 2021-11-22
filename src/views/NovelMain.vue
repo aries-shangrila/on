@@ -148,6 +148,7 @@ export default {
 .n-item {
   color:#F56C6C;
   font-size: 14px;
+  margin-top: 2px;
   margin-bottom: 2px;
 }
 
