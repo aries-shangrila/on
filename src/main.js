@@ -11,3 +11,7 @@ app.use(ElementPlus)
 app.use(VueRouter)
 app.use(createMetaManager())
 app.mount('#app')
+
+export default new VueRouter(
+    {base: process.env.BASE_URL=== "production" ? '/on/' : '/'}
+)
