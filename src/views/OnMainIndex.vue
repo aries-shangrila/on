@@ -15,10 +15,6 @@
            | 
           <el-link class="el-link-apple" href='https://open.firstory.me/user/ckvcd4qalodeg0838damj1kx7/platforms' target="_blank">🎧EP2 對話紀錄｜你長大不能喜歡女生！</el-link>
           </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> 67e12e1795cc1577c1d3bc8f7a8a66f15148c304
         </el-collapse-item>     
         <el-collapse-item title="BL作品交流" name="2">
           <div>一直以來都希望可以找到適合自己看的作品，也希望可以和別人交流心得，看未來能不能用一些技術的方式推薦到心坎裡。</div>
