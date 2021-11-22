@@ -54,7 +54,7 @@
       </el-table>
       <el-dialog
           v-model="dialogVisible"
-          title="大綱"
+          title="文案"
           width="50%"
         >
           <div v-html = "outline" />
