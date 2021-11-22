@@ -10,6 +10,16 @@
           <div style="padding:0 2%; line-height:24px;">
             <div style="padding-right:3%; padding-bottom:1%;">
               <div id=0 style="padding-top:2%;" />
+              <el-tag
+                v-for="item in tags"
+                :key="item.label"
+                :type="item.type"
+                :effect="item.effect"
+                size="medium"
+                style="margin:3px;"
+              >
+                {{ item.label }}
+              </el-tag>
               <p>{{stars}}</p>           
             </div>
             <el-divider><i class="el-icon-star-on"></i></el-divider>
@@ -44,6 +54,7 @@ export default {
       minus: [],
       section3: "",
       topics: [],
+      tags: []
     }
   },
   methods: {
@@ -59,6 +70,7 @@ export default {
           this.minus = res.minus
           this.section3 = res.section3
           this.topics = res.topics
+          this.tags = res.tags
         })
       })
     },

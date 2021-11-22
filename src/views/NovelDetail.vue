@@ -65,13 +65,13 @@
             <nav class="toc-content">
               <ul class="toc-items">
                 <li class="toc-item">
-                  <a href="#0" class="toc-link">加減分</a>
+                  <a href="#0" class="toc-link">正負評比</a>
                 </li>
                 <li v-for="topic in topics" :key="topic.id" class="toc-item">
                   <a v-bind:href="topic.link" class="toc-link">{{topic.point}}</a>
                 </li>
                 <li class="toc-item">
-                  <a href="#99" class="toc-link">結語</a>
+                  <a href="#99" class="toc-link">言而總之</a>
                 </li>
                 <li class="toc-item" v-if="podcast!=''">
                   <a href="#100" class="toc-link">Podcast</a>
