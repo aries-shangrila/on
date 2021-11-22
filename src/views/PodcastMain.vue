@@ -36,52 +36,6 @@
           </template>          
         </el-table-column>
       </el-table>
-
-      <!-- <iframe
-        v-for="link in links"
-        allow="autoplay *; encrypted-media *; fullscreen *" 
-        frameborder="0" 
-        height="175"
-        style="width:100%;max-width:300px;overflow:hidden;background:transparent;" 
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"         
-        src="link"
-      /> -->
-      <!--origin <iframe 
-        allow="autoplay *; encrypted-media *; fullscreen *" 
-        frameborder="0" 
-        height="176" 
-        style="width:100%;max-width:300px;overflow:hidden;background:transparent;" 
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
-        src="https://embed.podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592"
-      ></iframe> -->
-      <!--copy new <iframe 
-        src="https://embed.podcasts.apple.com/us/podcast/ep1-%E6%97%A5%E8%90%BD%E5%A4%A7%E9%81%93-%E6%AC%B8%E4%BD%A0%E6%80%8E%E9%BA%BC-%E4%B8%80%E5%80%8B%E4%BA%BA%E5%9C%A8%E9%80%99%E9%82%8A%E5%A3%9E%E5%A3%9E/id1592719965?i=1000540147592" 
-        width="300" 
-        height="176" 
-        frameBorder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe> -->
-      <!--origin <iframe 
-        src="https://podcast.kkbox.com/embed/tw/episode/0p5BERsU8uXP5xWqDE?theme=light" 
-        width="300" 
-        max-width="300"
-        height="176" 
-        frameborder="0">
-      </iframe> -->
-      <!--copy new <iframe 
-        src="https://podcast.kkbox.com/embed/tw/episode/0p5BERsU8uXP5xWqDE?theme=light" 
-        width="300" 
-        height="176" 
-        frameBorder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe> -->
-      <!--template <iframe 
-        src="https://open.spotify.com/embed/episode/5qrg97bxEDabBfBaVahChX?utm_source=generator" 
-        width="300" 
-        height="176" 
-        frameBorder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe> -->
     </el-main>
   <!-- </el-container> -->
 </template>

@@ -5,7 +5,6 @@
         <el-collapse v-model="activeNames" @change="handleChange">
           <el-collapse-item title="須知（戳戳收合）" name="1">
             <div class="n-col-item">✔ 非文字工作者，CD時間需要很久，產心得速度極為緩慢。</div>
-            <div class="n-col-item">✔ tag是我想放什麼就放什麼，會參考原作但不一定會使用。</div>
             <div class="n-col-item">✔ 棄文不會寫。</div>
             <div class="n-col-item">✔ 基本上有出現在這裡的一定是我覺得不錯的(才會寫心得)，特別推薦的找🧡</div>
           </el-collapse-item>
@@ -46,7 +45,7 @@
         </el-table>
         <el-dialog
           v-model="dialogVisible"
-          title="大綱"
+          title="文案"
           width="50%"
         >
           <div v-html = "outline" />

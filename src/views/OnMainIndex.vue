@@ -1,14 +1,21 @@
 <template>
   <!-- <el-container> -->
     <el-main>
-      <div class="div-collapse"> [ 本站含有大量BL作品討論內容，提醒可能造成身心不適，請斟酌閱覽。 ] </div>
+      <div class="div-collapse"> [ 本站含有大量BL作品討論內容，請斟酌閱覽。 ] </div>
       <el-collapse v-model="activeNames" @change="handleChange">
         <el-collapse-item title="始於2021春.">
           <!-- <div>全站內容皆獨自整理且網站自行開發建置，引用心得文字資料請註明網站名稱或網址。</div> -->
-          <div>Copyright © 2021 alphaliouo. All rights reserved.</div>
+          <div>Copyright © 2021 aries-shangrila. All rights reserved.</div>
         </el-collapse-item>
         <el-collapse-item title="更新推薦 (ver.202111-1)" name="1">
-          <el-link type="warning" href='/novel/202102' target="_blank">全世界都在等我們分手</el-link>
+          <div>
+          <el-link type="warning" href='/novel/202106' target="_blank">📖日落大道</el-link>
+           | 
+          <el-link type="danger" href='/manga/202105' target="_blank">📚家族になろうよ & いつか恋になるまで</el-link>
+           | 
+          <el-link class="el-link-apple" href='https://open.firstory.me/user/ckvcd4qalodeg0838damj1kx7/platforms' target="_blank">🎧EP2 對話紀錄｜你長大不能喜歡女生！</el-link>
+          </div>
+
         </el-collapse-item>     
         <el-collapse-item title="BL作品交流" name="2">
           <div>一直以來都希望可以找到適合自己看的作品，也希望可以和別人交流心得，看未來能不能用一些技術的方式推薦到心坎裡。</div>
@@ -70,6 +77,7 @@ export default {
   height: 40px;
   line-height: 40px;
   font-size: 14px;
+  background-color: #ffffff65;
 }
 
 .el-collapse-item__content {
@@ -77,6 +85,7 @@ export default {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 14px;
+  background-color: #ffffff65;
 }
 
 .p-collapse {
@@ -94,5 +103,11 @@ export default {
   padding-left: 2%;
   border-bottom: 1px solid var(--el-collapse-border-color);
 }
+
+.el-link-apple {
+  --el-link-default-font-color:#B753E1;
+  --el-link-default-active-color:#bf7ddc;
+}
+
 
 </style>
