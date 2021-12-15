@@ -1,0 +1,62 @@
+{
+  "tables":[
+    {
+      "id": "202105",
+      "title": "家族になろうよ & いつか恋になるまで",
+      "zh-title":"成為一家人吧 & 直到兩情相悅",
+      "author": "倉橋トモ",
+      "stars": "🌕🌕🌕🌕🌑",
+      "process": "完結",
+      "push": "🧡",
+      "tags":[
+        {
+          "type":"success",
+          "label":"#青梅竹馬",
+          "effect":"plain"
+        },
+        {
+          "type":"warning",
+          "label":"#白光碼🥩",
+          "effect":"plain"
+        },
+        {
+          "type":"",
+          "label":"#學生時代",
+          "effect":"plain"
+        }
+      ]
+    },
+    {
+      "id": "202103",
+      "title": "4月の東京は…",
+      "zh-title":"4月的東京...",
+      "author": "ハル",
+      "stars": "",
+      "process": "完結",
+      "push": "",
+      "tags":[
+        {
+          "type":"danger",
+          "label":"#雙向暗戀",
+          "effect":"plain"
+        },
+        {
+          "type":"warning",
+          "label":"#薄碼🥩",
+          "effect":"plain"
+        },
+        {
+          "type":"",
+          "label":"#學生時代",
+          "effect":"plain"
+        },
+        {
+          "type":"info",
+          "label":"#職場生活",
+          "effect":"plain"
+        }
+      ]
+    }
+  ]
+    
+}
