@@ -1,8 +1,12 @@
 {
   "items":[
     {
+      "index": "2",
+      "description": "ver.202112-1 Podcast EP update."
+    },
+    {
       "index": "1",
-      "description": "ver.202111-1 OPENING!"
+      "description": "ver.202111-1 OPENING!!"
     }
   ]    
 }
