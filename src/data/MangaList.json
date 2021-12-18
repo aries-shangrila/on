@@ -10,6 +10,11 @@
       "push": "🧡",
       "tags":[
         {
+          "type":"info",
+          "label":"#完結",
+          "effect":"plain"
+        },
+        {
           "type":"success",
           "label":"#青梅竹馬",
           "effect":"plain"
@@ -35,6 +40,11 @@
       "process": "完結",
       "push": "",
       "tags":[
+        {
+          "type":"info",
+          "label":"#完結",
+          "effect":"plain"
+        },
         {
           "type":"danger",
           "label":"#雙向暗戀",
