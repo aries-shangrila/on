@@ -101,12 +101,17 @@
       "tags":[
         {
           "type":"",
-          "label":"#18萬字",
+          "label":"#54萬字",
           "effect":"plain"
         },
         {
           "type":"success",
-          "label":"#替身",
+          "label":"#雙替身",
+          "effect":"plain"
+        },
+        {
+          "type":"danger",
+          "label":"#追妻火葬場",
           "effect":"plain"
         }
       ]
@@ -131,6 +136,11 @@
         {
           "type":"warning",
           "label":"#小甜餅",
+          "effect":"plain"
+        },
+        {
+          "type":"danger",
+          "label":"#美夢成真",
           "effect":"plain"
         }
       ]
