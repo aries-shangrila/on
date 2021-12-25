@@ -11,7 +11,7 @@
       "tags":[
         {
           "type":"info",
-          "label":"#完結",
+          "label":"#已完結",
           "effect":"plain"
         },
         {
@@ -21,7 +21,7 @@
         },
         {
           "type":"warning",
-          "label":"#白光碼🥩",
+          "label":"#白光碼Ｈ",
           "effect":"plain"
         },
         {
@@ -42,7 +42,7 @@
       "tags":[
         {
           "type":"info",
-          "label":"#完結",
+          "label":"#已完結",
           "effect":"plain"
         },
         {
@@ -52,7 +52,7 @@
         },
         {
           "type":"warning",
-          "label":"#薄碼🥩",
+          "label":"#薄碼Ｈ",
           "effect":"plain"
         },
         {
@@ -61,7 +61,7 @@
           "effect":"plain"
         },
         {
-          "type":"info",
+          "type":"success",
           "label":"#職場生活",
           "effect":"plain"
         }
