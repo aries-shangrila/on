@@ -98,6 +98,11 @@
             "type":"info",
             "label":"#古耽",
             "effect":"plain"
+          },
+          {
+            "type":"warning",
+            "label":"#年下攻",
+            "effect":"plain"
           }
         ],
         "comment": "<s>三郎娶我！</s>"
@@ -166,8 +171,8 @@
       }
       ,
       {
-        "id": "",
-        "push": "⭐",
+        "id": "202110",
+        "push": "⭐ 🧡",
         "type": "manga",
         "title": "10 COUNT",
         "author": "宝井理人",
@@ -188,6 +193,11 @@
           {
             "type":"danger",
             "label":"#ＳＭ",
+            "effect":"plain"
+          },
+          {
+            "type":"warning",
+            "label":"#年下攻",
             "effect":"plain"
           }
         ],

@@ -1,6 +1,15 @@
 {
   "tables":[
     {
+      "id":"5",
+      "ep": "EP5 《GIVEN 被贈與的未來》分過手的才明白",
+      "apple": "https://podcasts.apple.com/podcast/id1592719965?i=1000546396296",
+      "spotify": "https://open.spotify.com/episode/3Ez8OCefZS8JhMEqvW4MBu",
+      "kkbox": "https://podcast.kkbox.com/tw/episode/-kL2ZNwdYI6dQN0cOk",
+      "soundon": "https://player.soundon.fm/p/1f39285d-7fa5-49d3-bc39-dd1c69a9cfec/episodes/87bb8c8a-1870-44e6-928c-e77e08b4ee40",
+      "links":[]
+    },
+    {
       "id":"4",
       "ep": "EP4 對話紀錄｜人氣高卻難看的BL作品",
       "apple": "https://podcasts.apple.com/podcast/id1592719965?i=1000545245605",
