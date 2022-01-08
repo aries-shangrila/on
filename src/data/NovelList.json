@@ -87,7 +87,7 @@
         },
         {
           "type":"danger",
-          "label":"#單向暗戀",
+          "label":"#暗戀",
           "effect":"plain"
         },
         {
@@ -140,7 +140,7 @@
         },
         {
           "type":"success",
-          "label":"#雙替身",
+          "label":"#替身",
           "effect":"plain"
         },
         {

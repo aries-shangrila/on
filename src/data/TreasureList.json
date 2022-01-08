@@ -152,18 +152,18 @@
             "effect":"plain"
           },
           {
-            "type":"info",
-            "label":"#現代",
-            "effect":"plain"
-          },
-          {
             "type":"success",
-            "label":"#穿越",
+            "label":"#快穿",
             "effect":"plain"
           },
           {
             "type":"danger",
-            "label":"#雙向暗戀",
+            "label":"#暗戀",
+            "effect":"plain"
+          },
+          {
+            "type":"success",
+            "label":"#青梅竹馬",
             "effect":"plain"
           }
         ],
