@@ -43,6 +43,18 @@
     }
   ],
   "section3": "",
-  "podcast":[],
-  "recommend":[]
+  "podcast":[
+    {
+      "key":"",
+      "value":"",
+      "label":"",
+      "link":""
+    }
+  ],
+  "recommend":[
+    {
+      "label":"",
+      "link":""
+    }
+  ]
 }

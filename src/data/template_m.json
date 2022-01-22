@@ -9,6 +9,18 @@
   ],
   "section3": "",
   "tags":[],
-  "podcast":[],
-  "recommend":[]
+  "podcast":[
+    {
+      "key":"",
+      "value":"",
+      "label":"",
+      "link":""
+    }
+  ],
+  "recommend":[
+    {
+      "label":"",
+      "link":""
+    }
+  ]
 }

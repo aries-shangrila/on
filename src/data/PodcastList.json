@@ -1,6 +1,15 @@
 {
   "tables":[
     {
+      "id":"6",
+      "ep": "EP6 2021 年度最愛 BL 作品",
+      "apple": "https://podcasts.apple.com/podcast/id1592719965?i=1000547761521",
+      "spotify": "https://open.spotify.com/episode/6uxixJ4zSnN85eBgXmi87R",
+      "kkbox": "https://podcast.kkbox.com/tw/episode/Ws-Ip_YQbMdORqwhm2",
+      "soundon": "https://player.soundon.fm/p/1f39285d-7fa5-49d3-bc39-dd1c69a9cfec/episodes/f1b2d520-812a-4183-bafc-4743e049a32b",
+      "links":[]
+    },
+    {
       "id":"5",
       "ep": "EP5 《GIVEN 被贈與的未來》分過手的才明白",
       "apple": "https://podcasts.apple.com/podcast/id1592719965?i=1000546396296",
