@@ -7,7 +7,7 @@
       "author": "단비",
       "stars": "🌕🌕🌕🌕🌑",
       "process": "完結",
-      "push": "",
+      "push": "🧡",
       "tags":[
         {
           "type":"info",
@@ -74,6 +74,36 @@
         {
           "type":"warning",
           "label":"#白光碼Ｈ",
+          "effect":"plain"
+        }
+      ]
+    },
+    {
+      "id": "202110",
+      "push": "🧡",
+      "type": "manga",
+      "title": "10 COUNT",
+      "zh-title":"10 COUNT",
+      "author": "宝井理人",
+      "tags":[
+        {
+          "type":"info",
+          "label":"#已完結",
+          "effect":"plain"
+        },
+        {
+          "type":"warning",
+          "label":"#薄碼Ｈ",
+          "effect":"plain"
+        },
+        {
+          "type":"danger",
+          "label":"#ＳＭ",
+          "effect":"plain"
+        },
+        {
+          "type":"warning",
+          "label":"#年下攻",
           "effect":"plain"
         }
       ]
