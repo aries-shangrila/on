@@ -152,7 +152,7 @@
             "effect":"plain"
           },
           {
-            "type":"success",
+            "type":"info",
             "label":"#快穿",
             "effect":"plain"
           },
